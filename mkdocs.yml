@@ -1,0 +1,12 @@
+site_name: freyja
+theme:
+  name: readthedocs
+
+nav:
+  - Home: index.md
+
+plugins:
+  - mermaid2:
+      javascript: https://unpkg.com/mermaid/dist/mermaid.min.js
+      arguments:
+        startOnLoad: true
