@@ -1,11 +1,11 @@
-# Reproducibility
+# The 4 Noble Habits of Reproducibility
 
 1. Version Control and Project Structure
 
 If you cannot track how your code evolved,
 your results aren't reproducible.
 
-*Git & GitHub/GitLab*: Track every change to your codebase. Never rely on filenames like script_v2_final_fixed.py.  
+*Git & GitHub/GitLab*: Track every change to your codebase. Never rely on filenames like script_v2_final_fixed.py.
 
 *Standardized Project Layouts*: Use a consistent directory structure so collaborators know where to find data, scripts and notebook outputs.
 A popular framework for this is Cookiecutter Data Science.
@@ -22,14 +22,14 @@ A popular framework for this is Cookiecutter Data Science.
 2. Environment and Dependency Management
 
 Code that works on your machine today might break tomorrow because a package updated.
-You need to lock down your exact computational environment.  
+You need to lock down your exact computational environment.
 
 *Virtual Environments*: Use a virtual environment to isolate your project's dependencies so they don’t conflict with other projects.
 
 *Dependency Files*: Always export a precise list of your packages and their exact versions (e.g., a `uv.lock` file).
 
 *Containerization*: For the gold standard of reproducibility, use Docker.
-A Docker container packages your code, the operating system, libraries and dependencies together, ensuring it runs identically on any machine.  
+A Docker container packages your code, the operating system, libraries and dependencies together, ensuring it runs identically on any machine.
 
 3. Literate Programming and Documentation
 
@@ -48,9 +48,3 @@ Start from the raw, unedited data every time.
 
 *Workflow Orchestration*: For complex projects, use workflow tools like `Snakemake` or `Kedro`.
 These track data lineage (provenance) and only re-run steps of the pipeline if the underlying data or code has actually changed.
-
-5. Controlling Randomness
-
-Data science relies heavily on stochastic (random) algorithms—from splitting training/testing data to initializing weights in a neural network.
-
-*Setting Seeds*: Explicitly define the random seed at the top of your scripts.
