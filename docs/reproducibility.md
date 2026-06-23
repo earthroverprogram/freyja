@@ -1,4 +1,4 @@
-# The 4 Noble Habits of Reproducibility
+# The 4 Noble Pillar of Reproducibility
 
 1. Version Control and Project Structure
 
