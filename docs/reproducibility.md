@@ -48,3 +48,8 @@ Start from the raw, unedited data every time.
 
 *Workflow Orchestration*: For complex projects, use workflow tools like `Snakemake` or `Kedro`.
 These track data lineage (provenance) and only re-run steps of the pipeline if the underlying data or code has actually changed.
+
+## Excluded
+
+* Tests
+* Continuous integration
